@@ -6,7 +6,7 @@
 > **`Updated To` The Version 1.0**
 --- 
 
-<a><img src='https://cdn.ironman.my.id/i/9zd4if.jpg'/></a>
+<a><img src='https://files.catbox.moe/y678p1.jpg'/></a>
 
 ---
 
