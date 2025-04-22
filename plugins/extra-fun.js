@@ -340,29 +340,4 @@ cmd(
         }
     }
 );
-
-cmd({
-    pattern: "Love",
-    desc: "Owner love",
-    category: "love",
-    react: "😘",
-    filename: __filename,
-    use: "@tag"
-}, async (conn, mek, m, { q, reply }) => {
-    let roasts = [
-    ``ESHA ❤️😘 MUQEET ❤️ KI JAN ❤️`` ];               
-        
-    let randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
-    let sender = `@${mek.sender.split("@")[0]}`;
-    let mentionedUser = m.mentionedJid[0] || (mek.quoted && mek.quoted.sender);
-
-    if (!mentionedUser) {
-        return reply("Usage: .roast @user (Tag someone to roast them!)");
-    }
-
-    let target = `@${mentionedUser.split("@")[0]}`;
     
-    // Sending the roast message with the mentioned user
-    let message = `${target} :\n *${randomRoast}*\n> This is all for fun, don't take it seriously!`;
-    await conn.sendMessage(mek.chat, { text: message, mentions: [mek.sender, mentionedUser] }, { quoted: mek });
-});
