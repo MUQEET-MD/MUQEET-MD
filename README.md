@@ -52,7 +52,7 @@ Start by forking this repository to your own GitHub account. Click the button be
 </p>  
 
 
-🚀 Deploy KHAN-MD
+🚀 Deploy MUQEET-MD
 
 > Deploy on Heroku
 
