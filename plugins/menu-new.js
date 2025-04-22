@@ -19,7 +19,7 @@ cmd({
 ┃★│ 🚀 Platform : *Heroku*
 ┃★│ ⚙️ Mode : *[${config.MODE}]*
 ┃★│ 🔣 Prefix : *[${config.PREFIX}]*
-┃★│ 🏷️ Version : *4.0.0 Bᴇᴛᴀ*
+┃★│ 🏷️ Version : *1.0.0 Bᴇᴛᴀ*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Menu List* 〕━━┈⊷
@@ -55,7 +55,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7zfdcq.jpg' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/y678p1.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -377,23 +377,6 @@ cmd({
 > ${config.DESCRIPTION}`,
                 image: true
             },
-            
-    // love
-cmd({
-    pattern: "love",
-    desc: "menu the bot",
-    category: "menu",
-    react: "⤵️",
-    filename: __filename
-}, 
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try
-       {
-        let dec = `ESHA ❤️😍 MUQEET KI JAN 😘`
-        
-> ${config.DESCRIPTION}`,
-                image: true
-          
             '10': {
                 title: "🏠 *Main Menu* 🏠",
                 content: `╭━━━〔 *Main Menu* 〕━━━┈⊷
