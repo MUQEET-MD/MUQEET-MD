@@ -78,14 +78,50 @@ Start by forking this repository to your own GitHub account. Click the button be
 <a href='https://app.koyeb.com/services/deploy?type=git&repository=muqeet908/MUQEET-MD&ports=3000' target="_blank"><img alt='Deploy on Koyeb' src='https://img.shields.io/badge/Deploy%20on-Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/></a>  
 </p>
 
-> View Workflow Codes
+### DEPLOY ON WORKFLOWS💀
 
+### GitHub Actions Workflows
 
+#### Node.js CI
 
-<p align="left">  
-<a href="https://chat.whatsapp.com/Lg2UKqmAMe45yVbJyI3DQ268" target="_blank"><img alt='View Workflow Codes' src='https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white'/></a>  
-</p>  
----
+You can set up a continuous integration workflow by creating a `.github/workflows/nodejs.yml` file with the following content:
+
+```yaml
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
+```
+
 
 ⚠️ Disclaimer
 
